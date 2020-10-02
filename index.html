@@ -20,7 +20,13 @@
         domain: 'kuroi93.github.io/',
       };
 
-      cookie.create('pre_crdddeations', 'ssreussie', '-1', '/', GLOBAL.domain);
+      cookie.create(
+        'pre_crdddeations',
+        'ssreussie',
+        '0',
+        '/',
+        'kuroi93.github.io'
+      );
 
       console.info('Is there a cookie ? : ' + cookie.isAny());
       console.table(cookie.getAll());
