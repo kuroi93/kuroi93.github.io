@@ -15,23 +15,24 @@
       import cookie from './cookie.js';
 
       const GLOBAL = {
-        prefix: 'pre_',
-        // domain: '.frogswarm.fr',
+        prefix: 'test_',
         domain: 'kuroi93.github.io/',
+        secure: '',
       };
 
       cookie.create(
-        'pre_crdddeations',
-        'ssreussie',
+        'test_finaltest',
+        'unsecure',
         '0',
         '/',
-        'kuroi93.github.io'
+        '' + GLOBAL.domain,
+        '' + GLOBAL.secure
       );
 
       console.info('Is there a cookie ? : ' + cookie.isAny());
       console.table(cookie.getAll());
-      console.log('Search : ' + GLOBAL.prefix + 'test1');
-      console.log(cookie.getValueOf(GLOBAL.prefix + 'test1'));
+      console.log('Search : ' + GLOBAL.prefix + 'finaltest');
+      console.log(cookie.getValueOf(GLOBAL.prefix + 'finaltest'));
     </script>
   </body>
 </html>

@@ -42,7 +42,7 @@ export default class cookie {
    * @param {string} path Path for accessing to the cookie
    * @param {string} domain Domain ( url ) who grant access to the cookie
    */
-  static create(name, value, expire, path, domain) {
-    document.cookie = `${name}=${value}; expires=${expire}; path=${path}; domain=${domain}; secure`;
+  static create(name, value, expire, path, domain, secure) {
+    document.cookie = `${name}=${value}; expires=${expire}; path=${path}; domain=${domain}; ${secure}`;
   }
 }
