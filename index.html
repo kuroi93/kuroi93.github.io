@@ -15,24 +15,25 @@
       import cookie from './cookie.js';
 
       const GLOBAL = {
-        prefix: 'test_',
+        prefix: 'azerty_',
         domain: 'kuroi93.github.io/',
-        secure: '',
+        secure: 'secure',
       };
 
+      console.log(GLOBAL.secure);
+      console.log(GLOBAL.domain);
+
       cookie.create(
-        'test_finaltest',
+        'azerty_finaltest',
         'unsecure',
         '0',
         '/',
-        GLOBAL.domain + '',
-        GLOBAL.secure + ''
+        GLOBAL.domain,
+        GLOBAL.secure
       );
 
       console.info('Is there a cookie ? : ' + cookie.isAny());
       console.table(cookie.getAll());
-      console.log('Search : ' + GLOBAL.prefix + 'finaltest');
-      console.log(cookie.getValueOf(GLOBAL.prefix + 'finaltest'));
     </script>
   </body>
 </html>

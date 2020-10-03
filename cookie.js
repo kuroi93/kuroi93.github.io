@@ -44,5 +44,8 @@ export default class cookie {
    */
   static create(name, value, expire, path, domain, secure) {
     document.cookie = `${name}=${value}; expires=${expire}; path=${path}; domain=${domain}; ${secure}`;
+    console.log(
+      `${name}=${value}; expires=${expire}; path=${path}; domain=${domain}; ${secure}`
+    );
   }
 }
