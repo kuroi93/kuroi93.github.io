@@ -10,7 +10,7 @@
   </head>
 
   <body>
-    coucou ok ? :)
+    coucou ok on a réussi ou pas ?? :)
     <script type="module">
       import cookie from './cookie.js';
 
@@ -25,8 +25,8 @@
         'unsecure',
         '0',
         '/',
-        '' + GLOBAL.domain,
-        '' + GLOBAL.secure
+        GLOBAL.domain + '',
+        GLOBAL.secure + ''
       );
 
       console.info('Is there a cookie ? : ' + cookie.isAny());
