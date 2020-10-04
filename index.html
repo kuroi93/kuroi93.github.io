@@ -10,30 +10,15 @@
   </head>
 
   <body>
-    coucou ok on a réussi ffffffffffffou pas ?? :)
+    coucou :)
     <script type="module">
       import cookie from './cookie.js';
 
       const GLOBAL = {
         prefix: 'azerty_',
-        domain: 'kuroi93.github.io',
-        secure: '',
+        domain: '',
+        secure: true,
       };
-
-      console.log(GLOBAL.secure);
-      console.log(GLOBAL.domain);
-
-      cookie.create(
-        'azerty_finaltest',
-        'unsecure',
-        '0',
-        '/',
-        GLOBAL.domain,
-        GLOBAL.secure
-      );
-
-      console.info('Is there a cookie ? : ' + cookie.isAny());
-      console.table(cookie.getAll());
     </script>
   </body>
 </html>
